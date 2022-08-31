@@ -1,0 +1,111 @@
+.main {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 110px;
+}
+
+.headLogo {
+  width: 100%;
+  border-radius: 30px;
+
+  overflow: hidden;
+}
+
+.logo {
+  width: 45%;
+}
+
+.rabbit {
+  animation-name: rabbit;
+  animation-duration: 9s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes rabbit {
+  0% {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.cake {
+  position: absolute;
+  top: 0;
+  animation-name: cake;
+
+  animation-duration: 10s;
+
+  animation-fill-mode: both;
+}
+@keyframes cake {
+  0% {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(10000%);
+  }
+}
+
+.headTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(36, 104, 221);
+  color: aliceblue;
+  width: 100%;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  width: 100%;
+}
+
+.mainTitle {
+  color: white;
+  margin-bottom: 0;
+}
+
+.congratulate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  color: aliceblue;
+}
+
+ul {
+  color: black;
+}
+
+h2 {
+  color: rgb(36, 104, 221);
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+}
+
+li {
+  margin: 10px 0;
+  color: rgb(36, 104, 221);
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+  }
+  .main {
+    width: 90%;
+  }
+}

@@ -1,0 +1,10 @@
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgb(147, 53, 150);
+  background: linear-gradient(rgb(36, 104, 221) 225px, 0%, #eaeaea);
+  position: relative;
+  overflow: hidden;
+}
